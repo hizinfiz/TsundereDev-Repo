@@ -3,7 +3,8 @@ Name: Saber
 Version: 1.0
 Architecture: iphoneos-arm
 Description: Line Messages Theme
-Homepage: http://hizinfiz.github.com
+Depiction: http://github.com/hizinfiz/hizinfiz.github.com/depiction/Saber.html
+Homepage: http://github.com/hizinfiz
 Maintainer: hizinfiz <hizinfiz@gmail.com>
 Author: hizinfiz <hizinfiz@gmail.com>
 Section: Themes
