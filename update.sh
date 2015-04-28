@@ -1,6 +1,6 @@
 ./remove.sh
 
-dpkg-deb -b -Zgzip Saber
+dpkg-deb -b Saber
 
-dpkg-scanpackages -m . /dev/null >Packages
+dpkg-scanpackages . /dev/null >Packages
 bzip2 Packages
