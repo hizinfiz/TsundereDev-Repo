@@ -3,6 +3,7 @@
 dpkg-deb -b Saber
 dpkg-deb -b Cataracs
 dpkg-deb -b KingdomHearts
+dpkg-deb -b GurrenLagann
 
 dpkg-scanpackages . /dev/null >Packages
 bzip2 Packages
