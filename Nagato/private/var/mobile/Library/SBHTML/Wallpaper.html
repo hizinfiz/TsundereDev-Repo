@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<script type='text/javascript' src="js/clock.js"></script>
+		<script type='text/javascript' src="js/miniWeather.js"></script>
+		<script type='text/javascript' src="js/infostats.js"></script>
+		<link rel="stylesheet" href="style.css" type="text/css"/>
+	</head>
+
+	<body>
+
+		<div id="allthethings">
+			<div id="back"></div>
+			<div id="batt"></div>
+			<div id="charge"></div>
+
+			<div id="time"></div>
+
+			<div id="city"></div>
+			<div id="weather"></div>
+
+			<br>
+
+				<div id="cal">
+					<div id="day">
+						<div id="Sun">S</div>
+						<div id="SunD"></div>
+					</div>
+					<div id="day">
+						<div id="Mon">M</div>
+						<div id="MonD"></div>
+					</div>
+					<div id="day">
+						<div id="Tue">T</div>
+						<div id="TueD"></div>
+					</div>
+					<div id="day">
+						<div id="Wed">W</div>
+						<div id="WedD"></div>
+					</div>
+					<div id="day">
+						<div id="Thu">T</div>
+						<div id="ThuD"></div>
+					</div>
+					<div id="day">
+						<div id="Fri">F</div>
+						<div id="FriD"></div>
+					</div>
+					<div id="day">
+						<div id="Sat">S</div>
+						<div id="SatD"></div>
+					</div>
+				</div>
+		</div>
+		
+		<script>
+			clock({
+				twentyfour : false,
+				padzero : true,
+				refresh : 5000, // in milliseconds
+				success: function(clock){
+					var time = clock.hourtext() + ' ' + clock.minuteonetext() + ' ' + clock.minutetwotext();
+					document.getElementById('time').innerHTML = time.toUpperCase();
+
+					var today = clock.sdaytext();
+					var todayD = clock.sdaytext() + "D";
+					document.getElementById(todayD).innerHTML = clock.date();
+					document.getElementById(today).style.color = "#48D0F6";
+					document.getElementById(todayD).style.color = "#48D0F6";
+
+					var dayNum = clock.day()
+					var daysInMonth = [31,0,31,30,31,30,31,31,30,31,30,31]
+					daysInMonth[1]=((clock.year()%100 != 0) && (clock.year()%4 == 0) || (clock.year()%400 == 0)) ? 29 : 28;
+					var month = clock.month();
+
+					var days = [0, 1, 2, 3, 4, 5, 6]
+					for (i = 0; i < days.length; i++) {
+						days[i] += clock.date() - clock.day();
+
+						if (days[i] > daysInMonth[month]) {
+							days[i] -= daysInMonth[month];
+						}
+
+						if (days[i] < 1) {
+							days[i] = daysInMonth[month-1] - days[i];
+						}
+					}
+
+					document.getElementById('SunD').innerHTML = days[0];
+					document.getElementById('MonD').innerHTML = days[1];
+					document.getElementById('TueD').innerHTML = days[2];
+					document.getElementById('WedD').innerHTML = days[3];
+					document.getElementById('ThuD').innerHTML = days[4];
+					document.getElementById('FriD').innerHTML = days[5];
+					document.getElementById('SatD').innerHTML = days[6];
+				}
+			});
+
+			miniWeather({
+				code : 'USCA0273',
+				temp : 'f',
+				lang : 'en',
+				gps : false, //must use widget weather xml if set to true
+				refresh : 15, // in minutes
+				success: function(w){
+					document.getElementById('city').innerHTML = w.city.toUpperCase();
+					document.getElementById('weather').innerHTML = w.condition.toUpperCase() + ' - ' + w.temp + '&deg;';
+				}
+			});
+
+			batteryStats({
+				refresh : 1000, // in milliseconds
+				success: function(battery){
+					var batt = battery.percent;
+					var battPer = batt.toString() + "%"
+					var charge = battery.charging;
+
+					document.getElementById('batt').style.width = battPer;
+					if (batt > 0 && batt <= 20) {
+						document.getElementById('batt').style.color = "#F6514F";
+					} else if (batt == 100) {
+						document.getElementById('batt').style.color = "48F679";
+					}
+
+					if (charge.length == 9) {
+						document.getElementById('charge').style.height = "1px";
+					} else {
+						document.getElementById('charge').style.height = "0px";
+					}
+				}
+			});			
+		</script>
+	</body>
+</html>

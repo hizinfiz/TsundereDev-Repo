@@ -1,0 +1,11 @@
+Package: com.hizinfiz.nagato
+Name: Nagato LS & SBHTML 
+Version: 1.0
+Architecture: iphoneos-arm
+Description: Nagato Yuki
+Depiction: http://repo.tsunderedev.moe/depictions/Nagato.html
+Homepage: http://github.com/hizinfiz
+Maintainer: hizinfiz <hizinfiz@gmail.com>
+Author: hizinfiz <hizinfiz@gmail.com>
+Depends: com.matchstic.infostats
+Section: Themes
