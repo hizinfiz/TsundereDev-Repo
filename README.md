@@ -10,7 +10,7 @@ No tweaks since I don't know how to write them. (Maybe someday in the future?)
 
 * **Saber & Lancer** - Line Messages theme
 * **Cataracs Custom Cover** - Custom Cover theme inspired by my friend [Jesse Bryan](https://github.com/Winneon)'s lockscreen theme Cataracs
-* Various Lock Glyph themes - a **Kingdom Hearts** crown, Simon's drill from **Guren Lagann**, **Of Monsters and Men**'s album covers for the singles they've been releasing
+* Various Lock Glyph themes - a **Kingdom Hearts** crown, Simon's drill from **Gurren Lagann**, **Of Monsters and Men**'s album covers for the singles they've been releasing
 * **Binary Keypad Theme**
 
 Check out the [Screenshots](https://github.com/hizinfiz/hizinfiz.github.com/tree/master/images)!
