@@ -1,0 +1,85 @@
+.box {
+	*zoom:1;
+}
+
+.box:before, .box:after {
+	content:" ";
+	display:table;
+}
+
+.box:after {
+	clear:both;
+}
+
+ul, li, ol {
+	list-style:none outside none;
+}
+
+html {
+	box-sizing:border-box;
+	height:100vh;
+	width:100%;
+}
+
+*, *:before, *:after {
+	box-sizing:inherit;
+}
+
+body {
+	font-familY:'Roboto', sans-serif;
+	font-weight:300;
+}
+
+.box {
+    width: 90%;
+    margin: 0 auto 0 auto;
+	background:rgba(255, 255, 255, 0.8);
+	box-shadow:0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.t-d, #temp {
+	float:left;
+	width:50%;
+	padding:2rem 1rem;
+}
+
+.currently {
+	text-align:right;
+}
+
+.t-d-r { text-align: right;}
+.temp-r { text-align: right;}
+
+#time {
+	font-size:2.25rem;
+}
+
+#temp {
+	font-size:3.375rem;
+}
+
+#fullDate {
+	font-size:0.667rem;
+	padding-top:0.667rem;
+}
+
+.weather {
+	width:100%;
+	border-top:1px solid #eee;
+	clear:both;
+}
+
+.city, .currently {
+	float:left;
+	width:50%;
+}
+
+.city {
+	padding:1rem;
+}
+
+.currently {
+	padding:1rem 1rem 1rem 0;
+}
+
+

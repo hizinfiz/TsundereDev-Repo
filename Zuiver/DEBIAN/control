@@ -1,0 +1,10 @@
+Package: com.joshboothman.zuiver
+Name: Zuiver LS
+Version: 1.0
+Architecture: iphoneos-arm
+Description: A pure, clean and clear GroovyLock theme.
+Depiction: http://repo.tsunderedev.moe/depictions/Zuiver.html
+Homepage: http://github.com/hizinfiz
+Maintainer: hizinfiz <hizinfiz@gmail.com>
+Author: josh_boothman <joshboothman@gmail.com>
+Section: Themes
