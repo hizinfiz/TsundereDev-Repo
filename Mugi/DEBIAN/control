@@ -1,0 +1,11 @@
+Package: com.hizinfiz.mugi
+Name: Mugi
+Version: 0.1.1
+Architecture: iphoneos-arm
+Description: It's mo'fuckin Houkago Tea Time
+Depiction: http://repo.tsunderedev.moe/depictions/Mugi.html
+Homepage: http://github.com/hizinfiz
+Maintainer: hizinfiz <hizinfiz@gmail.com>
+Author: hizinfiz <hizinfiz@gmail.com>
+Section: Themes
+Depends: com.codethemed.iconbundles

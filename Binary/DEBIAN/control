@@ -1,0 +1,10 @@
+Package: com.hizinfiz.binary
+Name: Binary Keypad
+Version: 1.1
+Architecture: iphoneos-arm
+Description: Binary Keypad
+Depiction: http://repo.tsunderedev.moe/depictions/Binary.html
+Homepage: http://github.com/hizinfiz
+Maintainer: hizinfiz <hizinfiz@gmail.com>
+Author: hizinfiz <hizinfiz@gmail.com>
+Section: Themes

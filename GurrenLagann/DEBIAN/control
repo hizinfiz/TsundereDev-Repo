@@ -1,0 +1,10 @@
+Package: com.hizinfiz.gurrenlagannlockglyph
+Name: Gurren Lagann Lock Glyph
+Version: 1.1
+Architecture: iphoneos-arm
+Description: Gurren Lagann theme for Lock Glyph
+Depiction: http://repo.tsunderedev.moe/depictions/TTGL.html
+Homepage: http://github.com/hizinfiz
+Maintainer: hizinfiz <hizinfiz@gmail.com>
+Author: hizinfiz <hizinfiz@gmail.com>
+Section: Themes
