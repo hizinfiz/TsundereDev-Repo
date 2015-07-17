@@ -8,6 +8,7 @@ dpkg-deb -b OMAM
 dpkg-deb -b Binary
 dpkg-deb -b Nagato
 dpkg-deb -b Zuiver
+dpkg-deb -b Mugi
 dpkg-deb -b Requests
 dpkg-deb -b Chitoge
 
