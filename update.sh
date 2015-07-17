@@ -9,6 +9,7 @@ dpkg-deb -b Binary
 dpkg-deb -b Nagato
 dpkg-deb -b Zuiver
 dpkg-deb -b Requests
+dpkg-deb -b Chitoge
 
 dpkg-scanpackages . /dev/null > Packages
 bzip2 Packages

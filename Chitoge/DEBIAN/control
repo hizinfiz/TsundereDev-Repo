@@ -1,0 +1,10 @@
+Package: com.hizinfiz.chitoge
+Name: Chitoge LS
+Version: 1.0
+Architecture: iphoneos-arm
+Description: Your waifu is shit 
+Depiction: http://repo.tsunderedev.moe/depictions/Chitoge.html
+Homepage: http://github.com/hizinfiz
+Maintainer: hizinfiz <hizinfiz@gmail.com>
+Author: hizinfiz <hizinfiz@gmail.com>
+Section: Themes

@@ -1,0 +1,100 @@
+body {
+	font-family: "Helvetica Neue";
+	font-weight: 100;
+	margin-left: 0px;
+	margin-right: 0px;
+	color: white;
+	text-shadow: 1px 1px rgba(0,0,0,.5);
+}
+
+div.bg {
+	position: absolute;
+	background-repeat: no-repeat;
+	background-image: url("/var/mobile/Library/SpringBoard/LockBackgroundThumbnail.jpg");
+	top: -5px
+	width: 100%;
+	height: 100%;
+	visibility: hidden;
+	z-index: -1;
+}
+
+@media screen and (width: 320px) {
+	div.bg {
+		background-size: 320px auto;
+	}
+}
+
+@media screen and (width: 375px) {
+	div.bg {
+		background-size: 375px auto;
+	}
+}
+
+@media screen and (width: 414px) {
+	div.bg {
+		background-size: 475px auto;
+	}
+}
+
+div.allthethings {
+	display: block;
+	justify-content: center;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	top: 100px;
+	width: 260px;
+	border: 2px solid white;
+	padding: 20px 10px 9px 10px;
+}
+
+div.blur {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 280px;
+	height: 216px;
+	z-index: -1;
+	opacity: 1;
+}
+
+#time {
+	font-size: 60px;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+#battBack, #battLine {
+	position: relative;
+	height: 2px;
+	background-color: white;
+}
+
+#battBack {
+	width: 90%;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+	opacity: 0.6;
+}
+
+#battLine {
+	align-items: center;
+	top: -2px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#battVal {
+	font-size: 18px;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 15px;
+}
+
+#date {
+	font-size: 24px;
+	text-align: center;
+	padding-bottom: 20px;
+}
