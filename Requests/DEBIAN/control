@@ -1,6 +1,6 @@
 Package: com.hizinfiz.lockglyphrequests
 Name: Lock Glyph Requests
-Version: 1.0
+Version: 1.0.1
 Architecture: iphoneos-arm
 Description: Lock Glyphs that people asked me to make for them
 Depiction: http://repo.tsunderedev.moe/depictions/Requests.html
