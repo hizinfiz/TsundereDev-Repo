@@ -11,6 +11,7 @@ dpkg-deb -b Zuiver
 dpkg-deb -b Mugi
 dpkg-deb -b Requests
 dpkg-deb -b Chitoge
+dpkg-deb -b MugiPad
 
 dpkg-scanpackages . /dev/null > Packages
 bzip2 Packages
